@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skin name="PC DS4 Minimalist" author="chainswordcs" type="pc360;generic">
+<skin name="PC DS4 Minimalist" author="chainswordcs" type="pc360;generic;linuxjoystick">
 
     <background name="Default" image="pad.png" />
 
-    <section type="pc360;generic">
+    <section type="pc360;generic;linuxjoystick">
         <button name="up"    image="D-up.png" x="86" y="74" width="36" height="44" />
         <button name="down"  image="D-down.png" x="86" y="126" width="36" height="44" />
         <button name="left"  image="D-left.png" x="56" y="104" width="44" height="36" />
@@ -58,6 +58,34 @@
         <stick xname="x" yname="y" image="stick.png"
                x="139" y="150" width="86" height="86" xrange="18" yrange="18" yreverse="true"/>
         <stick xname="z" yname="rz" image="stick.png"
+               x="304" y="150" width="86" height="86" xrange="18" yrange="18" yreverse="true"/>
+    </section>
+	
+    <section type="linuxjoystick">
+        <button name="b0" image="A.png" x="402" y="137" width="48" height="48" />
+        <button name="b1" image="B.png" x="440" y="99" width="48" height="48" />
+        <button name="b3" image="X.png" x="364" y="99" width="48" height="48" />
+        <button name="b2" image="Y.png" x="402" y="60" width="48" height="48" />
+        
+		<button name="b9" image="start.png" x="357" y="53" width="26" height="37" />
+        <button name="b8"  image="back.png" x="147" y="53" width="26" height="37" />
+        <button name="b10"  image="home.png" x="247" y="178" width="35" height="35" />
+        <!-- not mapped to gamepad input (by default)
+        <button name="b13"  image="touchpad.png" x="174" y="38" width="182" height="107" /> -->
+        
+        <button name="b4" image="LB.png" x="65" y="19" width="75" height="25" />
+        <button name="b6" image="LT.png" x="65" y="19" width="75" height="25" />
+        <button name="b5" image="RB.png" x="389" y="19" width="75" height="25" />
+        <button name="b7" image="RT.png" x="389" y="19" width="75" height="25" />
+        
+        <!-- TODO: analog triggers (z and rz) -->
+        
+        <button name="b11" image="L3.png" x="139" y="150" width="86" height="86" />
+        <button name="b12" image="R3.png" x="304" y="150" width="86" height="86" />
+        
+        <stick xname="x" yname="y" image="stick.png"
+               x="139" y="150" width="86" height="86" xrange="18" yrange="18" yreverse="true"/>
+        <stick xname="rx" yname="ry" image="stick.png"
                x="304" y="150" width="86" height="86" xrange="18" yrange="18" yreverse="true"/>
     </section>
 </skin>
